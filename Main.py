@@ -44,6 +44,7 @@ class AutoBackup():
                         self.folder_finder(root_directory, usb_drive_name)
                 self.found = False
             self.drives_number_constant = drives_number
+            sleep(15)
 
     def folder_finder(self, directory, usb_drive_name):
         for subdir, dirs, files in os.walk(directory):
